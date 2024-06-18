@@ -1,0 +1,428 @@
+body {
+ 
+  font-family: Nunito Sans;;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9d5b1;
+} 
+header {
+  background-color: #f9d5b1;
+  color:#fff;
+  padding: 10px 20px;
+}
+
+.nav-container {
+ 
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-btn{
+  display: flex;
+  
+}
+.brand{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+ 
+
+}
+.brand img{
+  width: 25%;
+  height: 50%;
+ 
+ margin-left: 30%;
+}
+.nav-mobile {
+  display: none;
+}
+.home-btn a, .nav-list a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 3.5vh;
+  font-weight: 600;
+}
+.C{
+ 
+  width: 50px; 
+  height: 50px; 
+  background-color:rgba(139, 0, 0, 1);
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: white; 
+  font-size: 30px; 
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.nav-list, .nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.C a{
+  font-size: 90%;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+ 
+}
+#nav-list-icon-1,#nav-list-icon-2{
+ font-size: 100%;
+}
+
+
+/* Hamburger starts.......... */
+#check{
+  display: none;
+}
+#checkbtn{
+  display: none;
+}
+.Hamburger-nav{
+  z-index: 1000;
+   list-style-type: none;
+   color: white;
+   text-decoration: none;
+   display: none;
+}
+.hamburger-icon{
+  display: flex;
+  position: relative;
+  left: 50%;
+  font-size: 2vw;
+}
+ 
+   /*  product component start */
+   main {
+    padding: 20px;
+}
+ 
+.product-page{
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #6a542f;
+    font-size: 1.3vw;
+}
+
+.product-page {
+    display: flex;
+}
+.product-image {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:right;
+  align-items: center;
+  padding-top: 5%;
+  transform: translateY(-7%);
+}
+.product-image img {
+    width: 50%;
+    height: 100%;
+   border-radius: 5%;
+   margin-top: -5%;
+}
+.product-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-info a{
+text-decoration: none;
+color:rgba(255, 0, 0, 1);
+}
+.product-info-1{
+margin-top: 5vh;
+margin-bottom: 2vh;
+}
+.product-info-1 a{
+margin-right: 0.2vw;
+margin-left: 0.2vw;
+}
+.product-info-2{
+margin-bottom: 2vh;
+}
+
+.product-details {
+    margin-left: 5px;
+    width: 50%;
+    height: 30vh;
+   padding: 2% 0 2% 0;
+   transform: translateY(-8%);
+}
+.product-details h1 {
+  font-size: 1.4vw;
+  margin-top: 0;
+}
+.product-details h2 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-top: 0;
+    color: #6a542f;
+}
+
+.price {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgba(139, 0, 0, 1);
+}
+
+.special-price {
+  font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 0.9vw;
+ 
+}
+
+.discount {
+    margin-left: 10px;
+    
+}
+
+.rating {
+    margin-top: 10px;
+    display: flex;
+    height: 2vw;
+    align-items: center;
+    color: rgba(113, 108, 108, 1);
+}
+.rating span{
+  background-color: rgba(210, 127, 127, 1);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  font-size: 1.3vw;
+  /* background: #d27f7f; */
+  padding: 6px 15px 6px 15px;
+  text-decoration: none;
+}
+.rating h3{
+  margin-left: 0.4vw;
+  font-size: 1.13vw;
+}
+
+.offers {
+    margin-top: 20px;
+}
+.offers a {
+ text-decoration: none;
+ color: black;
+ font-size: 1vw;
+ font-weight: 500;
+}
+
+.offers h1 {
+    margin-top: 0;
+    color: rgba(139, 0, 0, 1);
+}
+.offers h4 {
+  margin-top: 0;
+  color: rgba(139, 0, 0, 1);
+}
+
+.offers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offers li {
+    margin-bottom: 5px;
+}
+
+.offers a {
+    text-decoration: none;
+    color:black;
+    
+}
+.icon-tag{
+  margin-right: 1vw;
+}
+
+
+.delivery {
+    margin-top: 20px;
+}
+.delivery-box{
+  display: flex;
+  align-items: center;
+}
+.delivery-box i{
+ margin-right: 0.8vh;
+}
+
+.delivery label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 5vh;
+}
+
+.delivery input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    background-color:#f9d5b1;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   
+  
+}
+.delivery input::placeholder{
+  color: rgba(210, 127, 127, 1);
+}
+.delivery input:focus{
+  outline: none;
+}
+
+.delivery button {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    background: rgba(210, 127, 127, 1);
+    padding: 1px 14px 1px 14px;
+    text-decoration: none;
+    border-color:rgba(210, 127, 127, 1); 
+}
+
+.actions {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.actions .primary-1 {
+    background-color: rgba(139, 0, 0, 1);
+    border-radius:1000px;
+    padding:20px 14px;
+    color:#ffffff;
+    display:inline-block;
+    font: normal 1.4vw/1 "Open Sans", sans-serif;
+    text-align:center;
+    border: none;
+    cursor: pointer;
+    margin-right: 3%;  
+}
+.actions .primary-2 {
+  background-color: rgba(139, 0, 0, 1);
+  border-radius:1000px;
+  padding:20px 24px;
+  color:#ffffff;
+  display:inline-block;
+  font: normal 1.4vw/1 "Open Sans", sans-serif;
+  text-align:center;
+  border: none;
+  cursor: pointer;
+ margin-left: 3%;
+}
+ 
+.reviews {
+    margin-top: 20px;
+}
+.reviews span{
+  margin-left: 2vw;
+}
+
+
+.reviews p {
+    margin: 0;
+}
+
+
+
+/* responsive design */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+  }
+
+  .categories, .products, .bridal-images, .genders, .recommendation-items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .crystal, .carat, .products .product, .bridal-images .images, .genders .gender, .recommendation-items .recommendation {
+      flex: 1 1 100%;
+  }
+}
+
+/* ////////////// */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  #check{
+    display: none;
+  }
+ #check:checked ~ul{
+    left:0;
+   
+  }
+  #checkbtn{
+    display:block;
+    position: relative;
+    left: -3%;
+    font-size: 3vw;
+  }
+  .Hamburger-nav{
+     list-style-type: none;
+     color: white;
+     text-decoration: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: absolute;
+     top: 8%;
+     background-color: rgba(131, 39, 41, 1);
+     width: 95%;
+     height: 60%;
+     left: -200%;
+     position: absolute;
+     transition: .5s;
+  }
+  .Hamburger-nav a,.Hamburger-nav li{
+    color: white;
+    text-decoration: none;
+   margin: 1rem;
+  
+  }
+  .hamburger-icon{
+    display: flex;   
+  }
+  .home-btn a,.brand a,.nav-list a,.C{
+    display: block;
+  }
+  .home-btn a,.C{
+    display: none;   
+  } 
+}

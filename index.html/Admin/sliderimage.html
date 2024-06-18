@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Images</title>
+
+
+    <link rel="stylesheet" href="../Admin/insertcategory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+    <style>
+       #description{
+        height: 8vh;
+        
+       }
+       #description-label{
+        margin-right: -4%;
+        
+       }
+       #Category-description-id{
+       margin-bottom: -0.1%;
+       }
+       #choose-btn button{
+         margin-right: 1%;
+       }
+       #insert-btn{
+        margin-left: 23%;
+        margin-top: 5%;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <!-- ////Hamberger -->
+                <input type="checkbox" name="" id="check">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+                <ul class="Hamburger-nav">
+                    <li class="Hamburger-home"><a href="#">Home</a></li>
+                    <li><a href="./Classes/index.html">Shop</a></li>
+                    <li><a href="./Blogs/index.html">Blogs</a></li>
+                    <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join
+                            Us</button></li>
+                </ul>
+                <!-- hamberger end -->
+                <nav>
+                    <ul class="home-btn">
+                      <li>Dashboard</li>
+                        
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <a href="#"><img src="../../image/Logo.png"></a>
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <button class="admin-logo-btn">
+                            <h3><i class="fa-solid fa-user-large"></i>Admin</h3>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="categories">
+                
+                    <ul>
+                        <li><a href="../Admin/insertproduct.html">Product</a></li>
+                        <li><a href="../Admin/insertcategory.html" >Categories</a></li>
+                        <li><a href="../Admin/sliderimage.html" style="color: rgba(139, 0, 0, 1);">Slider Images</a></li>
+                        <li><a href="../Admin/viewcustomer.html">View Customer</a></li>
+                        <li><a href="../Admin/vieworders.html">View Orders</a></li>
+                        <li><a href="../Admin/viewpayments.html">View Payments</a></li>
+                    </ul>
+               
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="product-header">
+                <h1 id="#top">Insert Image</h1>
+
+                <form id="productForm" style="background-color: rgba(254, 215, 186, 1);">
+                    <div class="Category-name">
+                        <label for="category">Slider Name</label>
+                        <select id="category" name="category">
+                            <option value="Home">Home</option>
+                            <option value="Home-1">Home-1</option>
+                            <option value="Home-2">Home-2</option>
+                            <option value="Home-3">Home-3</option>
+                        </select>
+                    </div>
+                    <div class="Category-description" id="Category-description-id">
+                        <label for="description" id="description-label">Choose Slider Image</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <p id="choose-btn" style="color: rgba(113, 108, 108, 1);"><button>Choose File</button>no file chosen</p>
+                    <div class="btn-x">
+                        <button type="button" onclick="insertProduct()" id="insert-btn">INSERT IMAGE</button>
+                      
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+ 
+</body>
+
+</html>

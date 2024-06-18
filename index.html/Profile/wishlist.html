@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="../style/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+<style>
+    section.wishlist {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+section.wishlist h2 {
+    border-bottom: 2px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+section.wishlist .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.items .item{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    /* max-width: 300px; */
+    text-align: center;
+}
+
+section.wishlist .items .item {
+    border: 1px ;
+    padding: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+section.wishlist .items .item img {
+    width: 100%;
+    height: auto;
+}
+
+section.wishlist .items .item p {
+    margin: 10px 0;
+}
+
+section.wishlist .items .item button {
+    background-color:rgba(204, 189, 189, 1);
+    color:black;
+    border: none;
+    padding:  10px 30px 10px 30px; ;
+    cursor: pointer;
+
+}
+.btn {
+  -webkit-border-radius: 29;
+  -moz-border-radius: 29;
+  border-radius: 29px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+}
+
+.item button{
+margin: 4px 2px;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            
+            <div class="nav-container">
+                 <!-- ////Hamburger -->                               
+                    <input type="checkbox" name="" id="check">
+                    <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>                              
+                <ul class="Hamburger-nav">
+                  <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+                  <li><a href="../HTML/shop.html">Shop</a></li>
+                  <li><a href="../HTML/blog.html">Blogs</a></li>
+                  <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join Us</button></li>        
+                </ul>
+        <!-- hamburger end -->
+                <nav>
+                   
+                    <ul class="home-btn">
+                        <a href="../index.html">Home</a>
+                        <a href="../HTML/shop.html">Shop</a>
+                        <a href="../HTML/blog.html">Blog</a>
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                <a href="#"><i id="nav-list-icon-2" class="fas fa-shopping-cart" style="color: black;"></i></a>
+                <h3 style="color: black;" >My Cart</h3>
+                <div class="C"><a href="#">S</a></div>
+            </ul>
+        </nav>
+    </div>
+</section>
+</header> 
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="profile-header">
+                <i id="icon" class="fa-solid fa-circle-user"></i>
+                <div class="Hello"><p>Hello,</p>
+                    <h2>Shikha Singh</h2></div>
+                
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../Profile/orders.html"><i class="fa-solid fa-bag-shopping"></i><span class="main-text"> My Orders</span>  <i class="fa-solid fa-angle-right" id="right-arrow"></i></a> </li>
+                <li><a href="#"><i class="fa-solid fa-user-gear"></i> <span class="main-text">   Account Settings</span></a>
+                    <ul>
+                        <li><a href="../Profile/profilesection.html">Profile Information</a></li>
+                        <li><a href="../Profile/manageaddress.html">Manage Address</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-wallet"></i> Payments</a>
+                    <ul>
+                        <li><a href="../Profile/savedcard.html">Saved Cards</a></li>
+                        <li><a href="../Profile/upicard.html">Saved UPI ids</a></li>
+                        <li><a href="../Profile/giftcard.html">Gift Cards</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i> My Stuff</a>
+                    <ul>
+                        <li  class="active"><a href="#">My Wishlist</a></li>
+                        <li><a href="../Profile/coupons.html">My Coupons</a></li>
+                        <li><a href="../Profile/reviews.html">My Reviews</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                    <ul>
+                        <li><a href="../Profile/notification.html">Notifications</a></li>
+                        <li><a href="#">KYC</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-power-off"></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <section class="wishlist">
+            <h2>My Wishlist</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="../image/cart/b1.png" alt="Blossom Brio Earring">
+                    <p>Blossom Brio Earring</p>
+                    <p style="color: blue;">Rs 58976</p>
+                    <button class="btn" style="background-color: green;">4.2 ★</button></br>
+                    <button style=" margin-top: 6px;">Add To Cart</button>
+                </div>
+                <div class="item">
+                    <img src="../image/cart/b2.png" alt="Regal Radiance Gold Bracelet">
+                    <p>Regal Radiance Gold Bracelet</p>
+                    <p style="color: blue;">Rs 49807</p>
+                    <button class="btn" style="background-color: green;">4.1 ★</button></br>
+                    <button style=" margin-top: 6px;">Add To Cart</button>
+                </div>
+                <div class="item">
+                    <img src="../image/cart/b3.png" alt="Luminous Loom Pendant">
+                    <p>Luminous Loom Pendant</p>
+                    <p style="color: blue;">Rs 52745</p>
+                    <button class="btn" style="background-color: yellow;">3.9 ★</button></br>
+                    <button style=" margin-top: 6px;">Add To Cart</button>
+                </div>
+                <div class="item">
+                    <img src="../image/cart/b4.png" alt="Fleur Finesse Earring">
+                    <p>Fleur Finesse Earring</p>
+                    <p style="color: blue;">Rs 65000</p>
+                    <button class="btn" style="background-color: green;">4.5 ★</button></br>
+                    <button style=" margin-top: 6px;">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+
+
+   <!-- Footer-->
+   <footer class="footer">
+    <div class="foot-container">
+        <div class="foot-container-box">
+
+            <div class="address foot-card">
+                <h2>Address</h2>
+                <div class="foot-container-box1">
+                    <li>
+                        Crystals & Carats <br>
+                        Plot No 44, 45, Street Number 14, <br>
+                        Marol MIDC Industry Estate, <br>
+                        Andheri East,Mumbai -400093 <br>
+                    </li>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="help foot-card foot-container-box-box">
+                <h2>Help & Info</h2>
+                <div class="foot-container-box2">
+                    <li>
+                        About Crystals & Carats<br>
+                        Careers <br>
+                        Blogs <br>
+                        FAQs <br>
+                    </li>
+                </div>
+            </div>
+
+            <div class="contact us foot-card foot-container-box-box">
+                <h2>Contact Us</h2>
+                <div class="foot-container-box3">
+                    &#9742 1809-908-5647 <br>
+                    &#9993 Get in Touch <br>
+                    &#xf075 Chat With Us <br>
+                </div>
+            </div>
+
+            <div class="links foot-card foot-container-box-box">
+                <h2>Useful links</h2>
+                <div class="foot-container-box4">
+                    Privacy Policy <br>
+                    Terms of Use <br>
+                    Payment Issues <br>
+                    Net Banking <br>
+                    Custom Jewellery <br>
+                </div>
+            </div>
+
+        </div>
+        <div class="map">
+            <h2>Location</h2>
+            <pre>
+<iframe class="map-1" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d34643.26875765682!2d72.85397189516038!3d19.11469503724438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCrystals%20%26%20Carats%20Plot%20No%2044%2C%2045%2C%20Street%20Number%2014%2C%20Marol%20MIDC%20Industry%20Estate%2C%20Andheri%20East%2CMumbai%20-400093%20google%20map!5e0!3m2!1sen!2sin!4v1717639407906!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </pre>
+        </div>
+
+<div class="follow-us">
+    <h3>Follow Us on : </h3>
+    <a href="#"><i id="nav-list-icon-1" class="fab fa-facebook-f" style="color: black;"></i></a>
+    <a href="#"><i id="nav-list-icon-2" class="fab fa-instagram" style="color: black;"></i></a>
+    <a href="#"><i id="nav-list-icon-1" class="fab fa-whatsapp" style="color: black;"></i></a>
+    <a href="#"><i id="nav-list-icon-2" class="fab fa-twitter" style="color: black;"></i></a>
+
+</div>
+
+</footer>
+
+<div class="copyright"></div>
+<h3>@2023 Crystals & Carats. All Rights Reserved</h3>
+</div>
+</div>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const editLinks = document.querySelectorAll('.edit-link');
+
+    editLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const inputField = this.previousElementSibling;
+            if (inputField.disabled) {
+                inputField.disabled = false;
+                inputField.focus();
+            } else {
+                inputField.disabled = true;
+            }
+        });
+    });
+});
+function openRegisterForm() {
+            // Placeholder function for opening register form
+            alert('Open Register Form');
+        }
+</script>
+</body>
+
+</html>

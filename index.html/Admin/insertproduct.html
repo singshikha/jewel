@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Products</title>
+
+
+    <link rel="stylesheet" href="../Admin/insert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+  
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <!-- ////Hamberger -->
+                <input type="checkbox" name="" id="check">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+                <ul class="Hamburger-nav">
+                    <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/shop.html">Shop</a></li>
+                    <li><a href="../HTML/blog.html">Blogs</a></li>
+                    <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join
+                            Us</button></li>
+                </ul>
+                <!-- hamberger end -->
+                <nav>
+                    <ul class="home-btn">
+                      <li>Dashboard</li>
+                        
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png"></a>
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <button class="admin-logo-btn">
+                            <h3><i class="fa-solid fa-user-large"></i>Admin</h3>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="categories">
+                <h2>Categories</h2>
+                
+                    <ul>
+                        <li><a href="../Admin/insertproduct.html" style="color: rgba(139, 0, 0, 1);">Product</a></li>
+                        <li><a href="../Admin/insertcategory.html">Categories</a></li>
+                        <li><a href="../Admin/sliderimage.html">Slider Images</a></li>
+                        <li><a href="../Admin/viewcustomer.html">View Customer</a></li>
+                        <li><a href="../Admin/vieworders.html">View Orders</a></li>
+                        <li><a href="../Admin/viewpayments.html">View Payments</a></li>
+                    </ul>
+               
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="product-header">
+                <h1 id="#top">Insert Product</h1>
+
+                <form id="productForm" style="background-color: rgba(254, 215, 186, 1);">
+                   
+                    <!-- 1 -->
+                    <div class="Category-description" id="sec-1">
+                        <label for="description">Product Title</label>
+                        <textarea id="description" name="description" placeholder="Gold Necklace 20 carat"></textarea>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="Category-name" id="sec-2">
+                        <label for="category">Product Keyword</label>
+                        <select id="category" name="category">
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Platinum">Platinum</option>
+                            <option value="Diamond">Diamond</option>
+                        </select>
+                    </div>
+                  
+                  
+                    <!-- 3 -->
+                    <div class="Category-name" id="sec-3">
+                        <label for="category">Product Category</label>
+                        <select id="category" name="category">
+                            <option value="carat">carat</option>
+                            <option value="carat-1">carat-1</option>
+                            <option value="carat-2">carat-2</option>
+                            <option value="carat-3">carat-3</option>
+                        </select>
+                    </div>
+
+
+                    <!-- 4 -->
+                    <div class="Category-description" id="sec-4">
+                        <label for="description">Product Image</label>
+                        <textarea id="description" name="description"></textarea>
+                        
+                    </div>
+                    <p id="img-upload" style="color: rgba(113, 108, 108, 1);"><button>Choose File</button>no file chosen</p>
+
+                    <!-- 5 -->
+                    <div class="Category-description" id="sec-5">
+                        <label for="description">Product Description</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+
+
+                    <div class="btn-x">
+                        <button type="button" onclick="insertProduct()" id="insert-btn">INSERT CATEGORY</button>
+                        <button type="button" onclick="viewProduct()" id="view-btn">VIEW CATEGORY</button>
+                    </div>
+                </form>
+
+
+
+
+
+            </section>
+
+
+        </main>
+    </div>
+
+</body>
+
+</html>

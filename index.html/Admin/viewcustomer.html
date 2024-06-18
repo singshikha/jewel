@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Customer</title>
+
+
+    <link rel="stylesheet" href="../Admin/viewcustomer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+    <style>
+        .product-para {
+            margin-top: 3vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <!-- ////Hamberger -->
+                <input type="checkbox" name="" id="check">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+                <ul class="Hamburger-nav">
+                    <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/shop.html">Shop</a></li>
+                    <li><a href="../HTML/blog.html">Blogs</a></li>
+                    <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join
+                            Us</button></li>
+                </ul>
+                <!-- hamberger end -->
+                <nav>
+                    <ul class="home-btn">
+                      <li>Dashboard</li>
+                        
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png"></a>
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <button class="admin-logo-btn">
+                            <h3><i class="fa-solid fa-user-large"></i>Admin</h3>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="categories">
+                
+                    <ul>
+                        <li><a href="../Admin/insertproduct.html" >Product</a></li>
+                        <li><a href="../Admin/insertcategory.html">Categories</a></li>
+                        <li><a href="../Admin/sliderimage.html">Slider Images</a></li>
+                        <li><a href="../Admin/viewcustomer.html" style="color: rgba(139, 0, 0, 1);">View Customer</a></li>
+                        <li><a href="../Admin/vieworders.html">View Orders</a></li>
+                        <li><a href="../Admin/viewpayments.html">View Payments</a></li>
+                    </ul>
+               
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="product-header">
+                <h2 id="#top">View Customer</h2>
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="space">Cust Id</th>
+                        <th class="space">Cust Name</th>
+                        <th class="space">Cust Email</th>
+                        <th class="space">Cust Contact</th>
+                        <th class="space">Cust Addresses</th>
+                        <th class="space">Make Changes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="grey">
+                        <td>1</td>
+                        <td>abc</td>
+                        <td>abc@def.com</td>
+                        <td>9176534312</td>
+                        <td>Delhi</td>
+                        <td>
+                            <div class="edit-dlt">
+                                <button class="edit"  id="x1"> Edit</button>
+                                <button class="edit"  id="x2">Delete</button>
+                                <hr>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="grey">
+                        <td>2</td>
+                        <td>mno</td>
+                        <td>mno@pqr.com</td>
+                        <td>9547655890</td>
+                        <td>Mumbai</td>
+                        <td>
+                           
+                            <div class="edit-dlt">
+                                <button class="edit"  id="x1">Edit</button>
+                                <button class="edit"  id="x2">Delete</button>
+                                <hr> 
+                             
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="grey">
+                        <td>3</td>
+                        <td>xyz</td>
+                        <td>xyz@pqr.com</td>
+                        <td>8760452313</td>
+                        <td>Raipur</td>
+                        <td>
+                            
+                            <div class="edit-dlt">
+                                <button class="edit"  id="x1">Edit</button>
+                                <button class="edit"  id="x2">Delete</button>
+                                <hr> 
+                             
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </main>
+    </div>
+
+
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const editButtons = document.querySelectorAll('.edit');
+    const deleteButtons = document.querySelectorAll('.delete');
+
+    editButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Edit functionality to be implemented.');
+        });
+    });
+
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (confirm('Are you sure you want to delete this product?')) {
+                alert('Delete functionality to be implemented.');
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+
+</html>

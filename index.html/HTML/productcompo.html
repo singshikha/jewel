@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Component</title>
+
+    <link rel="stylesheet" href="../style/productcompo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon"
+    />
+    <style>
+      .product-para {
+        margin-top: 3vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <section class="navigation">
+        <div class="nav-container">
+          <!-- ////Hamberger -->
+
+          <input type="checkbox" name="" id="check" />
+          <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+          <ul class="Hamburger-nav">
+            <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li>
+              <button
+                type="button"
+                class="join-btn"
+                id="joinUsBtn"
+                onclick="openRegisterForm()"
+              >
+                Join Us
+              </button>
+            </li>
+          </ul>
+
+          <!-- hamberger end -->
+          <nav>
+            <ul class="home-btn">
+              <a href="../index.html">Home</a>
+              <a href="./shop.html">Shop</a>
+              <a href="./blog.html">Blog</a>
+            </ul>
+          </nav>
+
+          <div class="brand">
+            <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png" alt="" /></a>
+          </div>
+
+          <nav>
+            <ul class="nav-list">
+              <a href="#"
+                ><i
+                  id="nav-list-icon-1"
+                  class="fa-solid fa-heart"
+                  style="color: black"
+                ></i
+              ></a>
+              <a href="#"> <i class="fa-solid fa-user-plus"></i></a>
+              <a href="#"
+                ><i
+                  id="nav-list-icon-2"
+                  class="fas fa-shopping-cart"
+                  style="color: black"
+                ></i
+              ></a>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="product-page">
+        <!-- //////Aside-1////// -->
+        <div class="product-image">
+          <img
+            src="../image/component/a1.png" alt="Stylish Golden Necklace"/>
+          <div class="actions">
+            <button type="button" class="primary-1">Add to Cart</button>
+            <button type="button" class="primary-2">Buy Now</button>
+          </div>
+          <div class="product-info">
+            <div class="product-info-1">
+              <a href=""
+                ><i class="fa-solid fa-star" style="color: black"></i>Trending Design</a
+              >
+              <a href=""
+                ><i class="fa-solid fa-tag" style="color: black"></i>Best Prices</a
+              >
+            </div>
+            <div class="product-info-2">
+              <a href=""
+                ><i class="fa-solid fa-square-check" style="color: black"></i
+                >Easy Returns</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ////Aside-2/////// -->
+        <div class="product-details">
+          <div class="breadcrumb">
+            <a href="#">Home</a> &gt; <a href="#">Shop</a> &gt;
+            <a href="#">Gold &gt; Necklace</a>
+          </div>
+          <h1>Crystals & Carats</h1>
+          <h2>
+            Stylish Golden Necklace Fashionable Round Fisher Gold Plated
+            Necklace Gold-plated Plated Necklace 20carat Gold Necklace
+          </h2>
+          <div class="price">
+            <h2 style="color: rgba(139, 0, 0, 1)">Special Price</h2>
+            <span class="special-price">Rs. 7500</span>
+            <span class="original-price">Rs. 10000</span>
+            <span class="discount">25% off</span>
+          </div>
+          <div class="rating">
+            <span style="color: black">4★</span>
+            <h3>1500 ratings and 300 reviews</h3>
+          </div>
+          <div class="offers">
+            <h1>Available Offers</h1>
+            <ul>
+              <a href=""
+                ><li>
+                  <h3 >
+                    <i class="fa-solid fa-tag icon-tag" style="color: black"></i>Bank
+                    Offer10% off on HDFC Bank Credit Card EMI Transactions, up
+                    to ₹1,500 on orders of ₹7,500 and above <a href="#" style="color: blue;">T&C</a>
+                  </h3>
+                </li></a
+              >
+              <a href=""
+                ><li>
+                  <h3>
+                    <i class="fa-solid fa-tag icon-tag" style="color: black"></i>Bank
+                    Offer10% off on Bank of Baroda Credit Card Txns, up to
+                    ₹1,500 on orders of ₹5,000 and above<a href="#" style="color: blue;">T&C</a>
+                  </h3>
+                </li></a
+              >
+              <a href=""
+                ><li>
+                  <h3>
+                    <i class="fa-solid fa-tag icon-tag" style="color: black"></i>Special
+                    PriceGet extra 14% off (price inclusive of
+                    cashback/coupon)<a href="#" style="color: blue;">T&C</a>
+                  </h3>
+                </li></a
+              >
+              <!-- <li> <a href="#">T&C</a></li>
+                        <li> <a href="#">T&C</a></li> -->
+              <li><h4>+5 more offers</h4></li>
+            </ul>
+          </div>
+          <div class="delivery">
+            <div class="delivery-box">
+              <i class="fa-solid fa-magnifying-glass-location"></i> <label for="pincode" style="font-size: 1.3vw;">Deliver to</label>
+              <input
+                type="text"
+                id="pincode"
+                name="pincode"
+                placeholder="Enter Pincode"
+              />
+              <button>Check</button>
+            </div>
+           
+            <p style="font-size: 1vw;">
+              Delivery by 21 Dec, Thursday | Free Delivery
+              <a id="delivery-T&C" href="#" style="color: rgba(139, 0, 0, 1); text-decoration: none; font-size: 1vw;">T&C applied</a> 
+            </p>
+          </div>
+
+          <div class="reviews">
+            <p>Product Details <i class="fa-solid fa-angle-down"></i> <span style="color: rgba(113, 108, 108, 1);">Know your products authenticity</span></p><br>
+            <p>Read Reviews <i class="fa-solid fa-angle-down"></i><span style="color: rgba(113, 108, 108, 1);">1500 ratings and 300 reviews</span></p><br>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

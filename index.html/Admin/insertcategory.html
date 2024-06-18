@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Category</title>
+
+
+    <link rel="stylesheet" href="../Admin/insertcategory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+    <style>
+        .product-para {
+            margin-top: 3vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <!-- ////Hamberger -->
+                <input type="checkbox" name="" id="check">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+                <ul class="Hamburger-nav">
+                    <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/shop.html">Shop</a></li>
+                    <li><a href="../HTML/blog.html">Blogs</a></li>
+                    <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join
+                            Us</button></li>
+                </ul>
+                <!-- hamberger end -->
+                <nav>
+                    <ul class="home-btn">
+                      <li>Dashboard</li>
+                        
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png"></a>
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <button class="admin-logo-btn">
+                            <h3><i class="fa-solid fa-user-large"></i>Admin</h3>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="categories">
+                
+                    <ul>
+                        <li><a href="../Admin/insertproduct.html">Product</a></li>
+                        <li><a href="../Admin/insertcategory.html" style="color: rgba(139, 0, 0, 1);">Categories</a></li>
+                        <li><a href="../Admin/sliderimage.html">Slider Images</a></li>
+                        <li><a href="../Admin/viewcustomer.html">View Customer</a></li>
+                        <li><a href="../Admin/vieworders.html">View Orders</a></li>
+                        <li><a href="../Admin/viewpayments.html">View Payments</a></li>
+                    </ul>
+               
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="product-header">
+                <h1 id="#top">Insert Category</h1>
+
+                <form id="productForm" style="background-color: rgba(254, 215, 186, 1);">
+                    <div class="Category-name">
+                        <label for="category">Category Name</label>
+                        <select id="category" name="category">
+                            <option value="Gold">Gold</option>
+                        </select>
+                    </div>
+                    <div class="Category-description">
+                        <label for="description">Category Description</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+
+                    <div class="btn-x">
+                        <button type="button" onclick="insertProduct()" id="insert-btn">INSERT CATEGORY</button>
+                        <button type="button" onclick="viewProduct()" id="view-btn">VIEW CATEGORY</button>
+                    </div>
+
+
+                </form>
+
+
+            </section>
+
+
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

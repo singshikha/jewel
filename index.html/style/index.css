@@ -1,0 +1,591 @@
+body {
+  font-family: Nunito Sans;;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(254, 215, 186, 1);
+}
+header {
+  background-color: #f9d5b1;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-btn{
+  display: flex;
+  
+}
+.brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.brand img{
+  width: 25%;
+  height: 50%;
+
+}
+.nav-mobile {
+  display: none;
+}
+.home-btn a, .nav-list a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 3.5vh;
+  font-weight: 600;
+}
+.C{
+ 
+  width: 50px; 
+  height: 50px; 
+  background-color:rgba(139, 0, 0, 1);
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: white; 
+  font-size: 30px; 
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.nav-list, .nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.C a{
+  font-size: 90%;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+ 
+}
+#nav-list-icon-1,#nav-list-icon-2{
+ font-size: 100%;
+}
+
+
+/* Hamburger starts.......... */
+#check{
+  display: none;
+}
+#checkbtn{
+  display: none;
+ 
+  /* float: right; */
+}
+.Hamburger-nav{
+   list-style-type: none;
+   color: white;
+   text-decoration: none;
+   display: none;
+}
+.hamburger-icon{
+  display: flex;
+  position: relative;
+  left: 50%;
+  font-size: 2vw;
+}
+
+
+ 
+/* Code Begins Here For images */
+.hero {
+    display: flex;
+  }
+  
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+  }
+  .box-1{
+    width: 50%;
+    object-fit: cover;
+    padding: 20px;
+    
+  }
+  .box-box{
+    width: 50%;
+    padding: 20px;
+  
+  }
+ 
+  .box-1 img  {
+    width:100%;
+   height: auto;
+  }
+
+  .box-2 img, .box-3 img {
+    width: 100%;
+    
+  }
+  .box-3 img {
+    padding: 20px;
+    margin-left: -4%;
+    height: 570px;
+    
+  }
+ /* Code Begins Here For Browse By Category */
+
+.Browse-By-Category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .Browse-By-Category h2{
+      font-size: 2.8vw;
+  }
+    .Browse-By-Category p{
+      font-size: 1.8vw;
+      color: rgba(113, 108, 108, 1);
+     text-shadow: -1px 5px 7px rgba(113,108,108,0.72);
+  }
+  section {
+    padding: 10px;
+    text-align: center;
+  }
+  section .gift-cards img{
+    width: 20%;
+    height: 20%;
+  }
+  .browse-category, .best-sellers, .bridal-jewellery, .gift-cards, .shop-by-gender, .recommendations {
+    background-color: rgba(254, 215, 186, 1);
+    margin-bottom: 20px;
+    padding: 20px;
+    
+  }
+  .browse-category h2, .best-sellers h2, .bridal-jewellery h2, .shop-by-gender h2, .recommendations h2 {
+    margin-bottom: 10px;
+  }
+  .browse-category p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  .browse-category{
+    background-color: white;
+  }
+  .categories, .products, .bridal-images, .genders, .recommendation-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .crystal, .carat {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+  .category img {
+    width: 70%;
+    height: 80%;
+    margin-left: 20px;
+  }
+  .category p {
+    margin-top: 10px;
+    font-size: 140%;
+  }
+  .crystal-box-box{
+    display: flex;
+  }
+  .carat-box-box{
+    display: flex;
+    
+  }
+  .categories{
+    justify-content: space-around;
+  
+  }
+
+/* Code Begins Here For Best Sellers */
+
+.best-sellers {
+    background-color:rgba(254, 215, 186, 1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.best-sellers h1 {
+    margin-bottom: 10px; 
+}
+
+.products   {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1 1 calc(25% - 40px);
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.product {
+    flex: 1 1 calc(25% - 40px);
+    text-align: center;
+    margin: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px;
+    color:rgba(131, 39, 41, 1);
+}
+
+/* Code Begins Here For Bridal Jewellery Special */
+
+.products .product, .bridal-images .images, .genders .gender, .recommendation-items .recommendation {
+    flex: 1 1 calc(25% - 40px);
+    text-align: center;
+    margin: 10px;
+  }
+  .products .product img, .bridal-images .images img, .genders .gender img,  .recommendation img {
+    width: 80%;
+    height: 70%;
+  }
+  .recommendation-items {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    background-color:rgba(131, 39, 41, 1);
+  }
+  .recommendations p, h1 {
+   text-align: center;
+   color: rgba(113, 108, 108, 1);
+  }
+  .genders .gender p, .bridal-images .images p, .recommendation-items {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .gift-cards img{
+  background-image: url(../image/gc3.jpg);
+  background-position: center;
+  font-weight: 400;
+  width: 95vw;
+  height: 70vh;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  }
+  .gift-cards h2{
+    position:relative;
+   top: 45vh;
+   font-size: 5vh;
+  }
+  .family-photo  {
+   background-image: url(../image/Rivaah-Bride.jpg);
+   background-position: center;
+  margin: 3.5rem 2rem 0 2rem;
+  height: 65vh;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .best-sellers-ear-ring img{
+    width: 50%;
+    height: 30%;
+  }
+  .best-sellers h2{
+  font-size: 2.8vw;
+  margin-top: -1%;
+  }
+  .best-sellers p{
+    font-size: 1.8vw;
+    color: rgba(113, 108, 108, 1);
+    margin-bottom: 0.1%;
+   }
+   .best-sellers img{
+    margin-top: -2%;
+   }
+   .bridal-jewellery h2{
+    font-size: 2.8vw;
+    letter-spacing: 0.3vw;
+   }
+   .bridal-jewellery h4{
+    font-size: 1.8vw;
+    font-weight: 100;
+    letter-spacing: 0.2vw;
+    color: rgba(113, 108, 108, 1); 
+   }
+   .bridal-images .images{
+   background-color: rgba(139, 0, 0, 1);
+   width: 50%;
+   height: 50%;
+   z-index: 1;
+   }
+   .bridal-images .images img{
+    width: 70%;
+   height: 50%;
+   margin-top:1.5vw; 
+   }
+   .bridal-images .images p{
+   letter-spacing: 0.2vh;
+    transform: translateY(7.6vh);
+    font-size: 1.2vw;
+   }
+   .grey-section{
+    background-color: rgba(204, 198, 198, 0.8);
+    height: 25vw;
+    transform: translateY(-25vw);
+    margin-bottom: -25%;
+   }
+
+/* Code Begins Here For Shop By Gender */
+
+.shop-by-gender h2{
+    font-size: 2.8vw;
+    }
+    .shop-by-gender h3{
+      font-size: 1.8vw;
+      color: rgba(113, 108, 108, 1);
+    letter-spacing: 0.1vw;
+    }
+    .genders p{
+      background-color: rgba(217, 217, 217, 1);
+    height: 7vh;
+    position: relative;
+    /* top: 22.8rem; */
+    top: 81%;
+    padding-top: 0.9rem;
+    font-size:3vh ;
+    }
+    .gender-1{
+    background-image: url(../image/men.jpg);
+    flex: 1 1 calc(25% - 40px);
+    margin: 10px;
+    background-position: center;
+    height: 60vh;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    }
+    .gender-2{
+      background-image: url(../image/women.webp);
+      flex: 1 1 calc(25% - 40px);
+      margin: 10px;
+    background-position: center;
+    height: 60vh;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .gender-3{
+      background-image: url(../image/kids.png);
+        flex: 1 1 calc(25% - 40px);
+        margin: 10px;
+        background-position: center;
+        height: 60vh;
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+
+/* Code Begins Here For Recommendation For You */
+
+.recommendations {
+    display: flex;
+     
+  }
+  .recommendation-items {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .recommendation-items-1{
+    background-image: url(../image/Personalized.jpg);
+    background-position: center;
+     width: 35%;
+     height: 81vh;
+     object-fit: cover;
+     background-size: cover;
+     background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-top: 5%; border-radius: 5%;
+    transform: translateY(-8%);
+    
+  }
+  
+  .recommendation-items-box{
+   display: flex;
+   flex-direction: column;
+    width: 35%;
+  }
+  .recommendation-items-2 img, .recommendation-items-3 img {
+    width: 70%;
+    height: 92%;
+    margin-left: 5%;
+    border-radius: 5%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+  
+
+/* Code Begins Here For Footer */
+
+footer {
+  background-color:  rgba(217, 217, 217, 1);
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  font: Nunito Sans;
+}
+
+.footer .foot-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.footer .foot-card {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.footer .foot-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+h1 {
+  color: rgba(139, 0, 0, 1);
+  
+}
+h2 {
+  color: rgba(139, 0, 0, 1);
+  
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5vw;
+  color: rgba(139, 0, 0, 1);
+  
+}
+.map-1{
+  width: 30vh;
+  height: 15vh;
+  
+}
+.map{
+  position: relative;
+  right: 43vw;
+}
+.foot-container-box{
+  display: flex;
+  
+}
+.foot-container{
+  display: flex;
+  flex-direction: column;
+ position: relative;
+ 
+}
+.foot-container-box1,.foot-container-box2,.foot-container-box3,.foot-container-box4{
+  font-size: 1vw;
+  list-style: none;
+}
+ .foot-container-box-box{
+  margin-left: 10vw
+ }
+.follow-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -2%;
+  margin: -3%;
+  width: 100%;
+}
+.follow-us a{
+margin: 0 1vw 0 1vw;
+font-size: 1.3vw;
+}
+
+.copyright {
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+  }
+
+  .categories, .products, .bridal-images, .genders, .recommendation-items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .crystal, .carat, .products .product, .bridal-images .images, .genders .gender, .recommendation-items .recommendation {
+      flex: 1 1 100%;
+  }
+}
+
+/* ////////////// */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  #check{
+    display: none;
+  }
+ #check:checked ~ul{
+    left:0;
+   
+  }
+  #checkbtn{
+    display:block;
+    position: relative;
+    left: -3%;
+    font-size: 3vw;
+  }
+  .Hamburger-nav{
+     list-style-type: none;
+     color: white;
+     text-decoration: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: absolute;
+     top: 8%;
+     background-color: rgba(131, 39, 41, 1);
+     width: 95%;
+     height: 60%;
+     left: -200%;
+     position: absolute;
+     transition: .5s;
+  }
+  .Hamburger-nav a,.Hamburger-nav li{
+    color: white;
+    text-decoration: none;
+   margin: 1rem;
+  
+  }
+  .hamburger-icon{
+    display: flex;   
+  }
+  .home-btn a,.brand a,.nav-list a,.C{
+    display: block;
+  }
+  .home-btn a,.C{
+    display: none;   
+  } 
+}

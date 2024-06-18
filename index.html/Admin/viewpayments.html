@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Payments</title>
+
+
+    <link rel="stylesheet" href="../Admin/viewpayment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+  
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <!-- ////Hamberger -->
+                <input type="checkbox" name="" id="check">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+                <ul class="Hamburger-nav">
+                    <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/shop.html">Shop</a></li>
+                    <li><a href="../HTML/blog.html">Blogs</a></li>
+                    <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join
+                            Us</button></li>
+                </ul>
+                <!-- hamberger end -->
+                <nav>
+                    <ul class="home-btn">
+                      <li>Dashboard</li>
+                        
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png"></a>
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <button class="admin-logo-btn">
+                            <h3><i class="fa-solid fa-user-large"></i>Admin</h3>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="categories">
+                
+                    <ul>
+                        <li><a href="../Admin/insertproduct.html">Product</a></li>
+                        <li><a href="../Admin/insertcategory.html">Categories</a></li>
+                        <li><a href="../Admin/sliderimage.html">Slider Images</a></li>
+                        <li><a href="../Admin/viewcustomer.html">View Customer</a></li>
+                        <li><a href="../Admin/vieworders.html">View Orders</a></li>
+                        <li><a href="../Admin/viewpayments.html"  style="color: rgba(139, 0, 0, 1);">View Payments</a></li>
+                    </ul>
+               
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="product-header">
+                <h1 id="#top">Payment Method</h1>
+            </section>
+
+
+    
+ <div class="payment-methods">
+    <div class="payment-option">
+        <input type="checkbox" id="cod" name="cod" checked>
+        <label for="cod">Cash On Delivery</label>
+        <button class="btn active">Active</button>
+        <button class="btn inactive">Inactive</button>
+    </div>
+    <div class="payment-option">
+        <input type="checkbox" id="card" name="card" checked>
+        <label for="card">Credit/Debit Card</label>
+        <button class="btn active">Active</button>
+        <button class="btn inactive">Inactive</button>
+    </div>
+    <div class="payment-option">
+        <input type="checkbox" id="upi" name="upi" checked>
+        <label for="upi">UPI</label>
+        <button class="btn active">Active</button>
+        <button class="btn inactive">Inactive</button>
+    </div>
+</div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="space">Payment Id</th>
+                        <th class="space">Invoice Number</th>
+                        <th class="space">Amount Paid</th>
+                        <th class="space">Payment Mode</th>
+                        <th class="space">Txn number</th>
+                        <th class="space">Payment Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="grey">
+                        <td>1</td>
+                        <td>INV-9784-565-323</td>
+                      
+                        <td>7500</td>
+                        <td>CASH</td>
+                        <td>65406754378</td>
+                        <td>
+                            <div class="edit-dlt">
+                                <button class="edit"  id="x1" style="background-color: rgba(38, 163, 50, 1); color: white;"> Received</button>
+                             
+                                <hr>
+                            </div>
+                           
+                        </td>
+                    </tr>
+                  
+                   
+                    <tr class="grey">
+                        <td>2</td>
+                        <td>INV-3897-653-278</td>
+                      
+                        <td>95000</td>
+                        <td>CARD</td>
+                        <td>98706754378</td>
+                        <td>
+                           
+                            <div class="edit-dlt">
+                                <button class="edit"  id="x1" style="background-color: rgba(255, 0, 0, 1); color: black;">Pending</button>
+                               
+                                <hr> 
+                             
+                            </div>
+                              
+                        </td>
+                       
+                    </tr>
+                  
+                    <tr class="grey" id="grey-x">
+                        <td>3</td>
+                        <td>INV-3897-653-278</td>
+                       
+                        <td>8450</td>
+                        <td>UPI</td>
+                        <td>83606754378</td>
+                        <td>
+                            <div class="edit-dlt">
+                                <button class="edit" id="x1" style="background-color: rgba(38, 163, 50, 1); color: white;">Received</button>
+                               
+                                <!-- <hr> -->
+                            </div>
+                           
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </main>
+    </div>
+
+
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const editButtons = document.querySelectorAll('.edit');
+    const deleteButtons = document.querySelectorAll('.delete');
+
+    editButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Edit functionality to be implemented.');
+        });
+    });
+
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (confirm('Are you sure you want to delete this product?')) {
+                alert('Delete functionality to be implemented.');
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+
+</html>

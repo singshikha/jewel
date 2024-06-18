@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter OTP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../SIGNUP/forgot.css">
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+    <style>
+    .otp-box{
+        display: flex;
+       
+        width: 100%;
+        justify-content: space-between;
+    }
+    .otp{
+      border: 1px solid rgba(139, 0, 0, 1);
+      width: 20%;
+      height: 5.5vh;
+     
+    }
+    .signup{
+        font-size: 2vw;
+    }
+    #resend-para{
+        text-align: center;
+    }
+    #resend-btn{
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="../image/blog_login/login.jpg" alt="Beautiful Forever">
+        </div>
+        <div class="form-section">
+            <i class="fa-solid fa-square-xmark" id="cross-btn"></i>
+            <div class="form-container">
+                <div class="form-header">
+                   <p class="signup"><i class="fa-solid fa-mobile-screen"></i>Enter OTP</p>
+                </div>
+                <hr class="white-line">
+            
+                <form id="forgot-pass-form">
+                    <div class="otp-box">
+                        <div class="otp">
+                            
+                        </div>
+                        <div class="otp">
+                            
+                        </div>
+                        <div class="otp">
+                            
+                        </div>
+                        <div class="otp">
+                            
+                        </div>
+                    </div>
+                   
+
+
+                    <button type="submit" class="signup-btn">Continue</button>
+                    <p id="resend-para">Didn’t receive email? <span id="resend-btn"><a href="../SIGNUP/forgot.html"> Click to resend</a></span></p>
+                    <p class="login-link" ><a href="../SIGNUP/login.html" style="color: black;"><i class="fa-solid fa-arrow-left"></i> Back to Login</a></p>
+                    
+                  
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

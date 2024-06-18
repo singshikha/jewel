@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earrings</title>
+
+
+    <link rel="stylesheet" href="../style/coin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="../image/crystals--carats-high-resolution-logo-transparent.png" rel="icon">
+    <style>
+        .product-para {
+            margin-top: 3vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <!-- ////Hamberger -->
+
+                <input type="checkbox" name="" id="check">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+
+                <ul class="Hamburger-nav">
+                    <li class="Hamburger-home"><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/shop.html">Shop</a></li>
+                    <li><a href="../HTML/blog.html">Blogs</a></li>
+                    <li><button type="button" class="join-btn" id="joinUsBtn" onclick="openRegisterForm()">Join
+                            Us</button></li>
+                </ul>
+
+
+                <!-- hamberger end -->
+                <nav>
+
+                    <ul class="home-btn">
+                        <a href="../index.html">Home</a>
+                        <a href="../HTML/shop.html">Shop</a>
+                        <a href="../HTML/blog.html">Blog</a>
+                    </ul>
+                </nav>
+
+                <div class="brand">
+                    <a href="#"><img src="../image/crystals--carats-high-resolution-logo-transparent.png" alt=""></a>
+                </div>
+
+                <nav>
+                    <ul class="nav-list">
+                        <a href="#"><i id="nav-list-icon-1" class="fa-solid fa-heart" style="color: black;"></i></a>
+                        <a href="#"> <i class="fa-solid fa-user-plus"></i></a>
+                        <a href="#"><i id="nav-list-icon-2" class="fas fa-shopping-cart" style="color: black;"></i></a>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+    </header>
+    <div class="container">
+
+        <!-- left section -->
+        <aside class="sidebar" >
+            <div class="filters">
+                <h2 style="color: black;">Filters</h2>
+                <div class="filter-section">
+                    <h3 id="price-text" style="color: black;">Price</h3>
+            
+                    <div class="form_control">
+                        <div class="form_control_container">                           
+                            <input class="form_control_container_time_input" type="number" id="fromInput"  value="1000" min="1000" max="100000"/>
+                        </div>
+                        <div id="form-control-To"><h3>To</h3></div>
+                        <div class="form_control_container">                             
+                            <input class="form_control_container_time_input" type="number" id="toInput" value="100000" min="1000" max="100000"/>
+                        </div>                       
+                    </div>
+                    <div class="sliders_control">
+                        <input id="fromSlider" type="range" value="1000" min="1000" max="100000"/>
+                        <input id="toSlider" type="range" value="100000" min="1000" max="100000"/>
+                    </div>
+                    <div class="min-max-text">
+                        <div class="form_control_container__time"><p> 1000</p></div>
+                        
+                        <div class="form_control_container__time"><p>100000</p> </div>
+                    </div>                   
+                </div>
+
+
+                <div class="filter-section" >
+                    <h3>Theme</h3>
+                    <label> Gods<input type="checkbox" value="gods"></label>
+                    <label>Goddess<input type="checkbox" value="goddess"> </label>
+                    <label> Gifting Coins<input type="checkbox" value="gifting-coins"></label>
+                    <label> Punched Coins<input type="checkbox" value="punched-coins"></label>
+                </div>
+                <div class="filter-section">
+                    <h3>Weight</h3>
+                    <label>1 Gram<input type="checkbox" value="1g"> </label>
+                    <label> 2 Gram<input type="checkbox" value="2g"></label>
+                    <label> 5 Gram<input type="checkbox" value="5g"></label>
+                    <label> 10 Gram<input type="checkbox" value="10g"></label>
+                </div>
+                <div class="filter-section">
+                    <h3 id="discount">Discount</h3>
+                    <label> 10% or more<input type="checkbox" value="10%"></label>
+                    <label> 20% or more<input type="checkbox" value="20%"></label>
+                    <label> 30% or more<input type="checkbox" value="30%"></label>
+                </div>
+                <div class="filter-section">
+                    <h3 id="customer-rating">Customer Rating</h3>
+                    <label> 3★ & above<input type="checkbox" value="3"></label>
+                    <label>4★ & above<input type="checkbox" value="4"> </label>
+                    <label> 5★<input type="checkbox" value="5"></label>
+                </div>
+                <div class="filter-section">
+                    <h3>Purity</h3>
+                    <label> 24K Gold<input type="checkbox" value="24k"></label>
+                    <label> 22K Gold<input type="checkbox" value="22k"></label>
+                    <label> 20K Gold<input type="checkbox" value="20k"></label>
+                    <label>18K Gold<input type="checkbox" value="18k"> </label>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <main class="main-content">
+            <div class="product-products-div">
+                <h3 class="product-products"> Shop>Products>Earrings</h3>
+                <h3 class="product-products">Sort By <button class="faq" onclick="show_list()"><i class="fa-solid fa-angle-down"></i></button></h3>
+            </div>
+           
+           
+            <section class="product-grid">
+                <div id="product-1" class="product">
+                    <img src="../image/carats/ear1.png" alt="Ring">
+
+                    <section class="product-para">
+                        <p>Rs. 2500</p>
+                        <p>50% off</p>
+                    </section>
+
+                </div>
+                <div id="product-2" class="product">
+                    <img src="../image/carats/ear2.png" alt="Earrings">
+
+                    <section class="product-para">
+                        <p>Rs. 3500</p>
+                        <p>25% off</p>
+                    </section>
+
+                </div>
+                <div id="product-3" class="product">
+                    <img src="../image/carats/ear3.png" alt="Bracelet">
+
+                    <section class="product-para">
+                        <p>Rs. 1500</p>
+                        <p>15% off</p>
+                    </section>
+
+                </div>
+                <div id="product-4" id="product-4" class="product">
+                    <img src="../image/carats/ear4.png" alt="Pendant">
+
+                    <section class="product-para">
+                        <p>Rs. 5000</p>
+                        <p>10% off</p>
+                    </section>
+
+                </div>
+                <div class="coin">
+                  
+                </div>
+                <div id="product-5" class="product">
+                    <img src="../image/carats/ear1.png" alt="Ring">
+
+                    <section class="product-para">
+                        <p>Rs. 2500</p>
+                        <p>50% off</p>
+                    </section>
+
+                </div>
+                <div id="product-6" class="product">
+                    <img src="../image/carats/ear2.png" alt="Earrings">
+
+                    <section class="product-para">
+                        <p>Rs. 6500</p>
+                        <p>25% off</p>
+                    </section>
+
+                </div>
+                <div id="product-7" class="product">
+                    <img src="../image/carats/ear3.png" alt="Bracelet">
+
+                    <section class="product-para">
+                        <p>Rs. 235000</p>
+                        <p>10% off</p>
+                    </section>
+
+                </div>
+                <div id="product-8" class="product">
+                    <img src="../image/carats/ear4.png" alt="Pendant">
+
+                    <section class="product-para">
+                        <p>Rs. 255000</p>
+                        <p>10% off</p>
+                    </section>
+
+                </div>
+                <div class="coin">
+               
+                </div>
+                <div id="product-9" class="product">
+                    <img src="../image/carats/ear1.png" alt="Ring">
+
+                    <section class="product-para">
+                        <p>Rs. 345000</p>
+                        <p>10% off</p>
+                    </section>
+
+                </div>
+                <div id="product-10" class="product">
+                    <img src="../image/carats/ear2.png" alt="Earrings">
+
+                    <section class="product-para">
+                        <p>Rs. 385000</p>
+                        <p>10% off</p>
+                    </section>
+
+                </div>
+                <div id="product-11" class="product">
+                    <img src="../image/carats/ear3.png" alt="Bracelet">
+
+                    <section class="product-para">
+                        <p>Rs. 455000</p>
+                        <p>10% off</p>
+                    </section>
+
+                </div>
+                <div id="product-12" class="product">
+                    <img src="../image/carats/ear4.png" alt="Pendant">
+
+                    <section class="product-para">
+                        <p>Rs. 876000</p>
+                        <p>10% off/-</p>
+                    </section>
+                </div>
+                <div id="product-1" class="product">
+                    <img src="../image/carats/ear1.png" alt="Ring">
+
+                    <section class="product-para">
+                        <p>Rs. 2500</p>
+                        <p>50% off</p>
+                    </section>
+
+                </div>
+                <div id="product-1" class="product">
+                    <img src="../image/carats/ear2.png" alt="Earrings">
+
+                    <section class="product-para">
+                        <p>Rs. 2500</p>
+                        <p>50% off</p>
+                    </section>
+
+                </div>
+                <div id="product-1" class="product">
+                    <img src="../image/carats/ear3.png" alt="Bracelet">
+
+                    <section class="product-para">
+                        <p>Rs. 2500</p>
+                        <p>50% off</p>
+                    </section>
+
+                </div>
+                <div id="product-1" class="product">
+                    <img src="../image/carats/ear4.png" alt="Pendant">
+
+                    <section class="product-para">
+                        <p>Rs. 2500</p>
+                        <p>50% off</p>
+                    </section>
+
+                </div>
+ <!-- <li> -->
+                 
+    <div class="sort-by">
+        <ul class="sortBy-list" id="SortBy-list">
+            <li>
+                <h5> Relevance</h5>
+            </li>
+            <li>
+                <h5>Popularity</h5>
+            </li>
+            <li>
+                <h5>Price: high to low</h5>
+            </li>
+            <li>
+                <h5>Price: low to high</h5>
+            </li>
+            <li>
+                <h5>Newest First</h5>
+            </li>
+        </ul>
+    </div>
+    
+<!-- </li> -->
+
+            </section>
+
+            <div class="product-nextPage">
+                <div class="product-nextPage-1"><a href="#top"> <button class="nextPageButton">
+                            <h4>Scroll To Top</h4>
+                        </button></a>
+
+                </div>
+                <div class="product-nextPage-2">
+                    <div class="product-nextPage-2-1">
+                        <a href="../HTML/product3.html">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+
+                    </div>
+                    <div class="product-nextPage-2-2"><a href="#" style="text-decoration: none;">
+                            <h3>Next>></h3>
+                        </a></div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Footer-->
+
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="foot-container-box">
+
+                <div class="address foot-card">
+                    <h2>Address</h2>
+                    <div class="foot-container-box1">
+                        <li>
+                            Crystals & Carats <br>
+                            Plot No 44, 45, Street Number 14, <br>
+                            Marol MIDC Industry Estate, <br>
+                            Andheri East,Mumbai -400093 <br>
+                        </li>
+                    </div>
+                </div>
+
+                <div class="help foot-card foot-container-box-box">
+                    <h2>Help & Info</h2>
+                    <div class="foot-container-box2">
+                        <li>
+                            About Crystals & Carats<br>
+                            Careers <br>
+                            Blogs <br>
+                            FAQs <br>
+                        </li>
+                    </div>
+                </div>
+                <div class="contact us foot-card foot-container-box-box">
+                    <h2>Contact Us</h2>
+                    <div class="foot-container-box3">
+                        &#9742 1809-908-5647 <br>
+                        &#9993 Get in Touch <br>
+                        &#xf075 Chat With Us <br>
+                    </div>
+                </div>
+                <div class="links foot-card foot-container-box-box">
+                    <h2>Useful links</h2>
+                    <div class="foot-container-box4">
+                        Privacy Policy <br>
+                        Terms of Use <br>
+                        Payment Issues <br>
+                        Net Banking <br>
+                        Custom Jewellery <br>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="map">
+                <h2>Location</h2>
+                <pre>
+<iframe class="map-1" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d34643.26875765682!2d72.85397189516038!3d19.11469503724438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCrystals%20%26%20Carats%20Plot%20No%2044%2C%2045%2C%20Street%20Number%2014%2C%20Marol%20MIDC%20Industry%20Estate%2C%20Andheri%20East%2CMumbai%20-400093%20google%20map!5e0!3m2!1sen!2sin!4v1717639407906!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </pre>
+            </div>
+            <ul class="follow-us">
+                <h3>Follow Us on : </h3>
+                <a href="#"><i id="nav-list-icon-1" class="fab fa-facebook-f" style="color: black;"></i></a>
+                <a href="#"><i id="nav-list-icon-2" class="fab fa-instagram" style="color: black;"></i></a>
+                <a href="#"><i id="nav-list-icon-1" class="fab fa-whatsapp" style="color: black;"></i></a>
+                <a href="#"><i id="nav-list-icon-2" class="fab fa-twitter" style="color: black;"></i></a>
+            </ul>
+    </footer>
+
+    <div class="copyright"></div>
+    <h3>@2023 Crystals & Carats. All Rights Reserved</h3>
+    </div>
+    </div>
+
+
+
+    <script>
+        function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+    const [from, to] = getParsed(fromInput, toInput);
+    fillSlider(fromInput, toInput, '#C6C6C6', 'rgba(139, 0, 0, 1)', controlSlider);
+   
+    if (from > to) {
+        fromSlider.value = to;
+        fromInput.value = to;
+    } else {
+        fromSlider.value = from;
+    }
+}
+// rgba(139, 0, 0, 1)
+// #25daa5
+    
+function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+    const [from, to] = getParsed(fromInput, toInput);
+    fillSlider(fromInput, toInput, '#C6C6C6', 'rgba(139, 0, 0, 1)', controlSlider);
+    setToggleAccessible(toInput);
+    if (from <= to) {
+        toSlider.value = to;
+        toInput.value = to;
+    } else {
+        toInput.value = from;
+    }
+}
+
+function controlFromSlider(fromSlider, toSlider, fromInput) {
+  const [from, to] = getParsed(fromSlider, toSlider);
+  fillSlider(fromSlider, toSlider, '#C6C6C6', 'rgba(139, 0, 0, 1)', toSlider);
+  if (from > to) {
+    fromSlider.value = to;
+    fromInput.value = to;
+  } else {
+    fromInput.value = from;
+  }
+}
+
+function controlToSlider(fromSlider, toSlider, toInput) {
+  const [from, to] = getParsed(fromSlider, toSlider);
+  fillSlider(fromSlider, toSlider, '#C6C6C6', 'rgba(139, 0, 0, 1)', toSlider);
+  setToggleAccessible(toSlider);
+  if (from <= to) {
+    toSlider.value = to;
+    toInput.value = to;
+  } else {
+    toInput.value = from;
+    toSlider.value = from;
+  }
+}
+
+function getParsed(currentFrom, currentTo) {
+  const from = parseInt(currentFrom.value, 10);
+  const to = parseInt(currentTo.value, 10);
+  return [from, to];
+}
+
+function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+    const rangeDistance = to.max-to.min;
+    const fromPosition = from.value - to.min;
+    const toPosition = to.value - to.min;
+    controlSlider.style.background = `linear-gradient(
+      to right,
+      ${sliderColor} 0%,
+      ${sliderColor} ${(fromPosition)/(rangeDistance)*100}%,
+      ${rangeColor} ${((fromPosition)/(rangeDistance))*100}%,
+      ${rangeColor} ${(toPosition)/(rangeDistance)*100}%, 
+      ${sliderColor} ${(toPosition)/(rangeDistance)*100}%, 
+      ${sliderColor} 100%)`;
+}
+
+function setToggleAccessible(currentTarget) {
+  const toSlider = document.querySelector('#toSlider');
+
+  if (Number(currentTarget.value) <= 0 ) {
+    toSlider.style.zIndex = 2;
+  } else {
+    toSlider.style.zIndex = 0;
+  }
+
+ 
+}
+
+const fromSlider = document.querySelector('#fromSlider');
+const toSlider = document.querySelector('#toSlider');
+const fromInput = document.querySelector('#fromInput');
+const toInput = document.querySelector('#toInput');
+fillSlider(fromSlider, toSlider, '#C6C6C6', 'rgba(139, 0, 0, 1)', toSlider);
+setToggleAccessible(toSlider);
+
+fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+
+
+// show list
+function show_list() {
+    var x = document.getElementById("SortBy-list");
+            if (x.style.bottom == "420%") {
+                x.style.bottom = "0%";
+                x.style.display="none";
+            } else {
+                x.style.bottom = "420%";
+                x.style.display="block";
+            }
+        }
+
+    </script>
+    
+</body>
+
+</html>
